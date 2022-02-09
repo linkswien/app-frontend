@@ -7,15 +7,7 @@ Used [tutorial](https://mherman.org/blog/dockerizing-a-react-app/)
 - Docker
 - npm
 
-### Running locally without a container (with hot reload)
-
-- `npm install`
-- `npm start`
-
-The app will be available at [localhost:3000](http://localhost:3000)
-Hot reloads should work.
-
-### As a conatiner
+Build and run dev container: (hot reload enabled)
 
 - `docker-compose up -d --build`
 
