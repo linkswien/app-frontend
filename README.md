@@ -1,6 +1,7 @@
 # app-frontend
 
 Used [tutorial](https://mherman.org/blog/dockerizing-a-react-app/)
+Using [Airbnb JS Style](https://github.com/airbnb/javascript)
 
 Using [Airbnb JS Style](https://github.com/airbnb/javascript)
 
