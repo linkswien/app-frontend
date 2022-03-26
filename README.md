@@ -2,8 +2,6 @@
 
 Used [tutorial](https://mherman.org/blog/dockerizing-a-react-app/)
 
-Using [Airbnb JS Style](https://github.com/airbnb/javascript)
-
 ## Development
 ### Prerequisites
 - Docker
