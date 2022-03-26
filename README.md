@@ -10,7 +10,15 @@ Using [Airbnb JS Style](https://github.com/airbnb/javascript)
 - Docker
 - npm
 
-Build and run dev container: (hot reload enabled)
+### Running locally without a container (with hot reload)
+
+- `npm install`
+- `npm start`
+
+The app will be available at [localhost:3000](http://localhost:3000)
+Hot reloads should work.
+
+### As a conatiner
 
 - `docker-compose up -d --build`
 
