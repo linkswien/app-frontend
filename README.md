@@ -1,6 +1,6 @@
 # app-frontend
 
-Used [tutorial](https://mherman.org/blog/dockerizing-a-react-app/)
+Used cra template [cra-template-typestyled](https://www.npmjs.com/package/cra-template-typestyled)
 
 ## Development
 ### Prerequisites
