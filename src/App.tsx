@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Oauth from './pages/Oauth';
-import Home from './pages/Home';
+import Oauth from './views/Oauth';
+import Home from './views/Home';
 
 class App extends React.Component {
 	render() {

@@ -18,31 +18,64 @@ module.exports = {
 				project: './tsconfig.json',
 			},
 			rules: {
-				'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+				'prettier/prettier': [
+					'error',
+					{},
+					{
+						usePrettierrc: true,
+					},
+				],
 				'no-console': 'warn',
 				'prefer-const': 'error',
 				'no-debugger': 'warn',
 				'no-unused-vars': 'off',
 				'@typescript-eslint/no-explicit-any': 'off',
-				'@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
+				'@typescript-eslint/no-unused-vars': [
+					'warn',
+					{
+						ignoreRestSiblings: true,
+					},
+				],
 				'react/prop-types': 'off',
 				'@typescript-eslint/no-unused-vars': 'off',
 				'@typescript-eslint/no-explicit-any': 'error',
 				'unused-imports/no-unused-imports': 'error',
 				'@typescript-eslint/no-unused-expressions': [
 					'error',
-					{ allowShortCircuit: true, allowTernary: true },
+					{
+						allowShortCircuit: true,
+						allowTernary: true,
+					},
 				],
 				'unused-imports/no-unused-vars': [
 					'warn',
-					{ vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+					{
+						vars: 'all',
+						varsIgnorePattern: '^_',
+						args: 'after-used',
+						argsIgnorePattern: '^_',
+					},
 				],
 				'react-hooks/rules-of-hooks': 'error',
 				'react-hooks/exhaustive-deps': 'error',
 				'react/react-in-jsx-scope': 'off',
 				'import/prefer-default-export': 'off',
-				'arrow-body-style': ['warn', 'as-needed', { requireReturnForObjectLiteral: false }],
-				"@typescript-eslint/indent": ["error", 'tab'],
+				'arrow-body-style': [
+					'warn',
+					'as-needed',
+					{
+						requireReturnForObjectLiteral: false,
+					},
+				],
+				'@typescript-eslint/indent': ['error', 'tab'],
+				'import/no-extraneous-dependencies': [
+					'error',
+					{
+						devDependencies: ['**/*.stories.*', '**/.storybook/**/*.*'],
+						peerDependencies: true,
+					},
+				],
+				'func-style': ['error', 'expression'],
 			},
 			env: {
 				browser: true,
@@ -52,4 +85,5 @@ module.exports = {
 			},
 		},
 	],
+	extends: ['plugin:storybook/recommended'],
 };
