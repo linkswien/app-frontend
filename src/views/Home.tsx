@@ -1,7 +1,5 @@
 import { useAppSelector } from '../app/hooks';
 
-const SERVER_URL = process.env.REACT_APP_SERVER_URL;
-
 const Home = () => {
 	const isLogged = useAppSelector((state) => state.user.isLogged);
 	return (
@@ -11,7 +9,7 @@ const Home = () => {
 				<button
 					onClick={() =>
 						window.location.assign(
-							`https://dev.backend.app.links-wien.at/login-redirect?redirectUri=${SERVER_URL}oauth`,
+							`https://dev.backend.app.links-wien.at/login-redirect?redirectUri=${process.env.REACT_APP_SERVER_URL}/oauth`,
 						)
 					}
 				>
