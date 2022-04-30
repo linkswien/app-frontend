@@ -3,6 +3,7 @@ FROM node:17-alpine3.14
 
 # set working directory
 WORKDIR /app-frontend
+RUN chown -R node:node /app-frontend
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app-frontend/node_modules/.bin:$PATH
@@ -15,6 +16,7 @@ RUN npm install react-scripts@4.0.3 -g --silent
 
 # add app
 COPY . ./
+RUN chown -R node:node /app-frontend/node_modules
 
 # start app
 CMD ["npm", "start"]

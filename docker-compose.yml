@@ -1,5 +1,7 @@
 version: '3.7'
 
+volumes:
+  node_modules:
 services:
   dev:
     container_name: app-frontend-dev
@@ -8,7 +10,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - '.:/app-frontend'
-      - '/app-frontend/node_modules'
+      - 'node_modules:/app-frontend/node_modules'
     ports:
       - 3000:3000
     environment:
