@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import store from '../app/store';
 import { logIn } from '../slices/userSlice';
 
+const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+
 export default function Oauth() {
 	const navigate = useNavigate();
 	const [code, setCode] = useState('');
@@ -24,7 +26,7 @@ export default function Oauth() {
 		headers.append('Content-Type', 'multipart/form-data');
 		const body = new FormData();
 		body.append('code', code);
-		body.append('redirectUri', 'http://localhost:8080/oauth');
+		body.append('redirectUri', `${SERVER_URL}oauth`);
 
 		fetch('https://dev.backend.app.links-wien.at/api/v1/login', {
 			method: 'POST',
