@@ -20,6 +20,4 @@ RUN chown -R node:node /app-frontend/node_modules
 # start app
 CMD ["npm", "start"]
 
-
-
 # see https://mherman.org/blog/dockerizing-a-react-app/
