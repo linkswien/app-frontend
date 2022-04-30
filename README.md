@@ -5,17 +5,31 @@ Used cra template [cra-template-typestyled](https://www.npmjs.com/package/cra-te
 ## Development
 ### Prerequisites
 - Docker
-- npm
+- docker-compose
 
-### As a conatiner
+### Run in Docker container
 
-- `docker-compose up -d --build`
+```
+# Start service and print output to console
+docker-compose up 
+
+# Alternatively, detach to run in background
+docker-compose up -d
+```
 
 The app will be available at [localhost:3000](http://localhost:3000)
 
-Kill the service with `docker-compose stop`
+Kill the service with `docker-compose down`
 
-## Deploy
+### Run Storybook
+
+```
+docker exec -it app-frontend-dev npm run storybook
+```
+
+Storybook will be available at [localhost:6006](http://localhost:6006)
+
+## Deploy (we'll cross that bridge when we come to it)
 
 - `docker-compose -f docker-compose.prod.yml up -d --build`
 
