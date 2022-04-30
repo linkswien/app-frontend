@@ -78,6 +78,12 @@ Default.args = {
 	text: 'Short',
 };
 
+/*
 Default.decorators = [
-	(story: () => ReactFragment) => <Mockstore mockState={MockedState}>{story()}</Mockstore>,
+	(story) => (
+		<Mockstore mockState={MockedState}>
+			{story()}
+		</Mockstore>
+	),
 ];
+*/
