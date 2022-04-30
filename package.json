@@ -8,6 +8,9 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@reduxjs/toolkit": "^1.8.1",
+    "@snek-at/storybook-addon-chakra-ui": "^1.0.0",
+    "@storybook/addon-measure": "^6.4.22",
+    "@storybook/addon-outline": "^6.4.22",
     "@storybook/addon-storysource": "^6.4.22",
     "@testing-library/jest-dom": "~5.16.2",
     "@testing-library/react": "~12.1.4",
@@ -87,9 +90,11 @@
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^1.0.3",
     "@storybook/addon-actions": "^6.4.21",
+    "@storybook/addon-controls": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.21",
     "@storybook/addon-interactions": "^6.4.21",
     "@storybook/addon-links": "^6.4.21",
+    "@storybook/addon-viewport": "^6.4.22",
     "@storybook/builder-webpack5": "^6.4.21",
     "@storybook/manager-webpack5": "^6.4.21",
     "@storybook/node-logger": "^6.4.21",
@@ -97,6 +102,7 @@
     "@storybook/react": "^6.4.21",
     "@storybook/testing-library": "^0.0.9",
     "eslint-plugin-storybook": "^0.5.8",
+    "react-docgen-typescript": "^2.2.2",
     "webpack": "^5.72.0"
   }
 }
