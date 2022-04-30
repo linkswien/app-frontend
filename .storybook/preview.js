@@ -1,3 +1,5 @@
+const theme = require('../src/app/chakraTheme')
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,10 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  viewport: {
+    defaultViewport: "Small mobile"
+  },/* ,
+  chakra: {
+    theme no clue warum das nicht geht.... keine theme colors in storybook also
+  } */
 }

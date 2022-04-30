@@ -1,11 +1,13 @@
 import { configureStore, StateFromReducersMapObject } from '@reduxjs/toolkit';
 import userReducer from '../slices/userSlice';
+import eventsReducer from '../slices/eventsSlice';
 import { loadState, saveState } from './localState';
 
 const preloadedState = loadState();
 
 const reducer = {
 	user: userReducer,
+	events: eventsReducer,
 };
 
 // Configure store with all reducers and initial state
