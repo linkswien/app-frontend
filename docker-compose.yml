@@ -13,5 +13,6 @@ services:
       - 'node_modules:/app-frontend/node_modules'
     ports:
       - 3000:3000
+      - 6006:6006
     environment:
       - CHOKIDAR_USEPOLLING=true
